@@ -30,6 +30,8 @@ To run this application, you'll need to sign up for a free API key from OpenWeat
 
 ## Screenshot:
 
+![Screenshot 2024-01-07 114908](https://github.com/RobynWindsor/react-weather-application/assets/127926809/7231ccc5-67d2-47a6-9229-9d64ad0e3f37)
+
 ## Future Enhancements:
 
 - Implement geolocation for automatic location detection.
