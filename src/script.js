@@ -70,3 +70,22 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
   console.log(apiUrl);
 }
+
+function showTemperature(response) {
+  let iconElement = document.querySelector('#weather-icon');
+  iconElement.setAttribute('src', response.data.condition.icon_url);
+  console.log(response.data);
+  console.log(response.data.condition.icon_url);
+  document.querySelector;
+  document.querySelector('#city').innerHTML = response.data.city;
+  document.querySelector('#temp').innerHTML = `${Math.round(
+    response.data.temperature.current
+  )}°C`;
+
+  document.querySelector('#humidity').innerHTML =
+    response.data.temperature.humidity;
+  document.querySelector('#wind').innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  getForecast(response.data.coordinates);
+}
