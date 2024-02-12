@@ -12,14 +12,30 @@
       crossorigin="anonymous"
     />
   </head>
-  <div class="container"></div>
-  <div class="gitLink">
-    <small>
-      <a href="https://github.com/Robyn-web/MyWeatherApp" target="_blank"
-        >Open-source code
-      </a>
-      by Robyn Windsor
-    </small>
-  </div>
-  <body></body>
+  <body>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <div class="'card" id="card">
+          <div class="searching" id="searching">
+            <input
+              type="search"
+              placeholder="enter city name"
+              autocomplete="off"
+              autospellcheck="false"
+              id="city-input"
+            />
+            <button><img src="src/images/search.png" /></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="gitLink">
+      <small>
+        <a href="https://github.com/Robyn-web/MyWeatherApp" target="_blank"
+          >Open-source code
+        </a>
+        by Robyn Windsor
+      </small>
+    </div>
+  </body>
 </html>
