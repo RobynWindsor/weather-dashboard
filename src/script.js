@@ -21,3 +21,8 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 h3.innerHTML = `${day} ${hours}:${minutes}`;
+
+function displayForecast(response) {
+  console.log(response);
+  let forecast = response.data.daily.slice(1);
+  // Skip first day
