@@ -15,7 +15,14 @@ function loadSearches() {
   let previousSearchElement = document.querySelector('#previous-searches');
   previousSearchElement.innerHTML = '';
   searches.forEach(function (city) {
-    previousSearchElement.innerHTML += `<li>${city}</li>`;
+    let searchItem = document.createElement('button');
+    searchItem.textContent = city;
+
+    // Add a click event listener to each search item
+    searchItem.addEventListener('click', function () {
+      search(city);
+    });
+    previousSearchElement.appendChild(searchItem);
   });
 }
 
@@ -130,3 +137,5 @@ function handleSubmit(event) {
 let searchForm = document.querySelector('#search-form');
 searchForm.addEventListener('submit', handleSubmit);
 search('Cape Town');
+
+loadSearches();
