@@ -8,6 +8,16 @@ function saveSearch(city) {
     localStorage.setItem('weatherSearches', JSON.stringify(searches));
   }
 }
+// Create Function yo load previous searches from local storage
+function loadSearches() {
+  let searches = JSON.parse(localStorage.getItem('weatherSearches')) || [];
+  // Display previous searches in UI
+  let previousSearchElement = document.querySelector('#previous-searches');
+  previousSearchElement.innerHTML = '';
+  searches.forEach(function (city) {
+    previousSearchElement.innerHTML += `<li>${city}</li>`;
+  });
+}
 
 let currentDate = new Date();
 
@@ -107,6 +117,8 @@ function showTemperature(response) {
     response.data.wind.speed
   );
   getForecast(response.data.coordinates);
+  saveSearch(response.data.city);
+  loadSearches();
 }
 
 function handleSubmit(event) {
