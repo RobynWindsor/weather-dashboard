@@ -28,6 +28,10 @@ Welcome to my simple yet effective Weather Application! This project is built en
 
 To run this application, you'll need to sign up for a free API key from OpenWeatherMap.
 
+## Local Storage Usage:
+
+-**Saved Searches/;** The application utilizes local storage to store previously searched cities. This allows users to quickly access their recent searches without having to re-enter the city names.
+
 ## Screenshot:
 
 ![Screenshot 2024-01-07 114908](https://github.com/RobynWindsor/react-weather-application/assets/127926809/7231ccc5-67d2-47a6-9229-9d64ad0e3f37)

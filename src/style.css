@@ -150,3 +150,7 @@ p {
   height: 50px;
   cursor: pointer;
 }
+button,
+clear {
+  border-radius: 5px;
+}
