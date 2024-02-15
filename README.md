@@ -30,7 +30,7 @@ To run this application, you'll need to sign up for a free API key from OpenWeat
 
 ## Local Storage Usage:
 
--**Saved Searches/;** The application utilizes local storage to store previously searched cities. This allows users to quickly access their recent searches without having to re-enter the city names.
+-**Saved Searches:** The application utilizes local storage to store previously searched cities. This allows users to quickly access their recent searches without having to re-enter the city names.
 
 ## Screenshot:
 
